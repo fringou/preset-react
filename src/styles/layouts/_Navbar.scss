@@ -1,0 +1,70 @@
+@import '../utils/variables';
+nav{
+    height : 50px;
+    background : $linear-gradient-2;
+}
+.liste{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+.items{
+    margin-right: 10px;
+    color: #fff;
+}
+.btn{
+    display: none;
+}
+@media screen and (max-width:500px) {
+    .liste{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        height: 200px;
+    }
+    .items:nth-child(1){
+        border-top: 1px solid #fff;
+        margin-top: 50px;
+    }
+    .items{
+        height: 50px;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        line-height: 50px;
+    }
+    .btn{
+        width: 50px;
+        height: 35px;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: #fff;
+        cursor:pointer;
+    }
+    // .svg-wrapper{
+      
+       
+    //     height: 10px;
+
+
+
+    // }
+    .lineSvg{
+        stroke-dasharray: 10 ;
+        stroke-dashoffset:10;
+        transition-timing-function: linear;
+        transition: stroke-dashoffset 1s, stroke-dasharray 1s; 
+    }
+    
+        .svg-wrapper:hover .lineSvg{
+        stroke-dasharray: 10;   
+        stroke-dashoffset: 0;
+        stroke: #0f0f;
+        
+      }
+    
+}

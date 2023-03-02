@@ -1,0 +1,10 @@
+$colour-primary:#15dea5;
+$colour-secondary:#001534;
+$colour-accent:#d6fff5;
+$colour-white:#fff;
+$colour-invalid:#db464b;
+
+$linear-gradient-1: linear-gradient(to right, hsla(163, 83%, 50%, 0.459), $colour-primary);
+$linear-gradient-2: linear-gradient(to right, hsla(246, 83%, 50%, 0.459), hsla(246, 43%, 59%, 0.459));
+
+$list: $colour-accent, $colour-invalid;
